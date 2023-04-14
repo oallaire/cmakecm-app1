@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.24)
+cmake_minimum_required(VERSION 3.22)
 project(cmakecm-app1 LANGUAGES C)
 
 include(FetchContent)
@@ -7,7 +7,7 @@ if (NOT cmakecm-lib_POPULATED)
     FetchContent_Declare(
             cmakecm-lib
             GIT_REPOSITORY https://github.com/oallaire/cmakecm-lib.git
-            GIT_TAG        2c25c7af64b607b5bc0fea6f14b04464617c47c6
+            GIT_TAG        ce5b0d18acf1c0c136131c2ad7ddc3d806ab2d91
     )
     FetchContent_MakeAvailable(cmakecm-lib)
 endif ()
