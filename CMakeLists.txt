@@ -14,3 +14,5 @@ endif ()
 
 add_executable(${PROJECT_NAME} main.c)
 target_link_libraries(${PROJECT_NAME} cmakecm::lib)
+
+install(TARGETS ${PROJECT_NAME} DESTINATION bin)
